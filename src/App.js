@@ -3,9 +3,10 @@ import './App.css'
 import {BrowserRouter , Routes, Route} from 'react-router-dom'
 import Layout from './Components/Layout'
 import Home from './pages/Home'
-import About from './pages/About'
 import Contact from './pages/Contact'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import OurStore from './pages/OurStore'
+import Blogs from './pages/Blogs'
 
 const App = () => {
   return (
@@ -14,8 +15,9 @@ const App = () => {
           <Routes>
             <Route path='/' element={<Layout/>}>
               <Route index element={<Home/>}/>
-              <Route path='about' element={<About/>}/>
+              <Route path='ourstore' element={<OurStore/>}/>
               <Route path='contact' element={<Contact/>}/>
+              <Route path='blogs' element={<Blogs/>}/>
             </Route>
           </Routes>
         </BrowserRouter>
