@@ -9,7 +9,7 @@ const ProductCard = (props) => {
     return (
         <>
             <div className={` ${location.pathname === "/ourstore" ? `gr-${grid}` : "col-3"}`}>
-                <Link className='product-card position-relative m-1' style={{ textDecoration: 'none' }}>
+                <Link to='/product/:id' className='product-card position-relative m-1' style={{ textDecoration: 'none' }}>
                     <div className='wishlist-icon position-absolute'>
                         <Link>
                             <img src='images/wish.svg' alt='' />
