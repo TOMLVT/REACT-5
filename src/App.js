@@ -19,6 +19,8 @@ import RefundPolicy from './pages/RefundPolicy'
 import TermAndContions from './pages/TermAndContions'
 import ShippingPolicy from './pages/ShippingPolicy'
 import SingleProduct from './pages/SingleProduct'
+import CartProduct from './pages/CartProduct'
+import Checkout from './pages/Checkout'
 
 const App = () => {
   return (
@@ -29,8 +31,10 @@ const App = () => {
               <Route index element={<Home/>}/>
               <Route path='ourstore' element={<OurStore/>}/>
               <Route path='contact' element={<Contact/>}/>
+              <Route path='cart' element={<CartProduct/>}/>
               <Route path='product/:id' element={<SingleProduct/>}/>
               <Route path='blogs' element={<Blogs/>}/>
+              <Route path='checkout' element={<Checkout/>}/>
               <Route path='blog/:id' element={<SingleBlog/>}/>
               <Route path='compare-product' element={<CompareProduct/>}/>
               <Route path='wish-list' element={<WishList/>}/>

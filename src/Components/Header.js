@@ -60,7 +60,7 @@ const Header = () => {
                 </Link>
               </div>
               <div>
-                <Link className='d-flex align-items-center gap-10 text-white' style={{textDecoration:'none'}}>
+                <Link  to='/cart' className='d-flex align-items-center gap-10 text-white' style={{textDecoration:'none'}}>
                   <img src='images/cart.svg' alt='compare'/>
                     <div className='d-flex flex-column gap-10'>
                       <span className='badge bg-white text-dark rounded-pill'>0</span>

@@ -2,6 +2,7 @@ import React from 'react'
 import Meta from '../Components/Meta'
 import BreadCrumb from '../Components/BreadCrumb'
 import { Link } from 'react-router-dom'
+import CustomInput from '../Components/CustomInput'
 
 const Login = () => {
   return (
@@ -15,12 +16,8 @@ const Login = () => {
                 <div className='auth-card'>
                    <h3 className='text-center mb-3'>Login</h3>
                    <form action='' className='d-flex flex-column gap-15'>
-                    <div>
-                        <input type='email' name='email' placeholder='Enter your email...' className='form-control'/>
-                    </div>
-                    <div className='mt-1'>
-                        <input type='password' name='password' placeholder='Enter your password...' className='form-control'/>
-                    </div>
+                    <CustomInput type='text' placeholder='Enter your email...' name='name'/>
+                    <CustomInput type='password' placeholder='Enter your password...' name='password'/>
                     <div>
                         <Link to='/forgot-password' style={{textDecoration:'none'}}>Forgot Password ? </Link>
                         <div className='mt-3 d-flex justify-content-center gap-15 align-items-center'>

@@ -6,14 +6,15 @@ import { BiPhoneCall } from "react-icons/bi";
 import { AiOutlineHome } from "react-icons/ai";
 import { AiOutlineMail } from "react-icons/ai";
 import { BiInfoCircle } from "react-icons/bi";
+import Container from '../Components/Container';
 const Contact = () => {
   return (
     <>
       <Meta title={'Contact'} />
       <BreadCrumb title="Contact" />
       <div className='contact-us'>
-        <div className='contact-wrapper py-5 home-wrapper-2'>
-          <div className='container-xxl'>
+        <Container class1='contact-wrapper py-5 home-wrapper-2'>
+        
             <div className='col-12'>
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4672.523170702236!2d105.7198263207131!3d10.007938493764426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a08903d92d1d0d%3A0x2c147a40ead97caa!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBOYW0gQ-G6p24gVGjGoQ!5e0!3m2!1svi!2s!4v1724503555795!5m2!1svi!2s" 
@@ -74,8 +75,8 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+        
+        </Container>
       </div>
     </>
   );
