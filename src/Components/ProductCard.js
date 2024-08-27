@@ -8,8 +8,16 @@ const ProductCard = (props) => {
 
     return (
         <>
-            <div className={` ${location.pathname === "/ourstore" ? `gr-${grid}` : "col-3"}`}>
-                <Link to='/product/:id' className='product-card position-relative m-1' style={{ textDecoration: 'none' }}>
+            <div className={` ${location.pathname === "/product" ? `gr-${grid}` : "col-3"}`}>
+                <Link  to={`${
+                location.pathname === '/'
+                 ? '/product/:id' 
+                 :  location.pathname === '/product/:id'
+                 ? '/product/:id'
+                 : ':id'
+                 
+                 }`} 
+                 className='product-card position-relative m-1' style={{ textDecoration: 'none' }}>
                     <div className='wishlist-icon position-absolute'>
                         <button className='border-0 bg-transparent'>
                             <img src='images/wish.svg' alt='' />
@@ -44,8 +52,17 @@ const ProductCard = (props) => {
                 </Link>
             </div>
 
-            <div className={` ${location.pathname === "/ourstore" ? `gr-${grid}` : "col-3"}`}>
-                <Link className='product-card position-relative m-1' style={{ textDecoration: 'none' }}>
+            <div className={` ${location.pathname === "/product" ? `gr-${grid}` : "col-3"}`}>
+                <Link to={`${
+                location.pathname === '/'
+                 ? '/product/:id' 
+                 :  location.pathname === '/product/:id'
+                 ? '/product/:id'
+                 : ':id'
+                 
+                 }`} 
+                
+                  className='product-card position-relative m-1' style={{ textDecoration: 'none' }}>
                     <div className='wishlist-icon position-absolute'>
                         <Link>
                             <img src='images/wish.svg' alt='' />
